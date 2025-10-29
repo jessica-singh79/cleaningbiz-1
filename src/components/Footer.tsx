@@ -1,100 +1,88 @@
-import { Sparkles, Mail, Phone, MapPin } from 'lucide-react';
+import { TestimonialsSection } from '@/components/ui/testimonials-with-marquee';
 
-export function Footer() {
+const testimonials = [
+  {
+    author: {
+      name: 'Sarah M.',
+      handle: 'Goshen, NY',
+      avatar:
+        'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: "Guille's team is amazing! They transformed my home and now I have my weekends back. The attention to detail is incredible. Worth every penny!",
+  },
+  {
+    author: {
+      name: 'Michael R.',
+      handle: 'Monroe, NY',
+      avatar:
+        'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: "Best cleaning service I've ever used. Professional, thorough, and always on time. They make our office shine every week. Highly recommend!",
+  },
+  {
+    author: {
+      name: 'Jennifer L.',
+      handle: 'Chester, NY',
+      avatar:
+        'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: "They got my full deposit back after move-out! Their end of tenancy clean was incredibly thorough. The landlord said it was the cleanest he'd ever seen it.",
+  },
+  {
+    author: {
+      name: 'David T.',
+      handle: 'Middletown, NY',
+      avatar:
+        'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: 'Eco-friendly products that actually work! My kids have allergies and these green products are perfect. Plus the results are outstanding.',
+  },
+  {
+    author: {
+      name: 'Lisa K.',
+      handle: 'Warwick, NY',
+      avatar:
+        'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: "The deep cleaning after our party was a lifesaver! Called them in the morning, they came same day. House looked brand new. Can't thank them enough!",
+  },
+  {
+    author: {
+      name: 'James W.',
+      handle: 'Goshen, NY',
+      avatar:
+        'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: "We've been using Guille's Cleaning for over a year. Consistent quality every single time. Trustworthy, reliable, and they treat our home like their own.",
+  },
+  {
+    author: {
+      name: 'Amanda S.',
+      handle: 'Monroe, NY',
+      avatar:
+        'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: 'My carpets look brand new after their steam cleaning! Got rid of pet stains I thought were permanent. Absolutely worth it!',
+  },
+  {
+    author: {
+      name: 'Robert M.',
+      handle: 'Chester, NY',
+      avatar:
+        'https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: 'Called for a quote on Friday, they came Saturday morning. Fast, efficient, and my place has never been cleaner. 5 stars all the way!',
+  },
+];
+
+export function Testimonials() {
   return (
-    <footer className="bg-slate-900 text-slate-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Sparkles className="w-6 h-6 text-blue-500" />
-              <span className="text-xl font-bold text-white">
-                SparkleClean
-              </span>
-            </div>
-            <p className="text-sm">
-              Professional cleaning services you can trust. Making spaces shine
-              since 2009.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-white font-semibold mb-4">Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Residential Cleaning
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Commercial Cleaning
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Deep Cleaning
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Move In/Out
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-blue-500" />
-                (555) 123-4567
-              </li>
-              <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-blue-500" />
-                hello@sparkleclean.com
-              </li>
-              <li className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-blue-500" />
-                123 Clean Street, NY
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="pt-8 border-t border-slate-800 text-center text-sm">
-          <p>
-            &copy; {new Date().getFullYear()} SparkleClean. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
+    <div className="py-12 md:py-16 bg-slate-50">
+      <TestimonialsSection
+        title="Real Reviews from Real Customers"
+        description="Join hundreds of happy families in Goshen and surrounding areas who trust Guille's Cleaning"
+        testimonials={testimonials}
+      />
+    </div>
   );
 }
