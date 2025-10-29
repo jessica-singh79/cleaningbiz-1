@@ -3,65 +3,83 @@ import { TestimonialsSection } from '@/components/ui/testimonials-with-marquee';
 const testimonials = [
   {
     author: {
-      name: 'Sarah Johnson',
-      handle: '@sarahj_home',
+      name: 'Sarah M.',
+      handle: 'Goshen, NY',
       avatar:
         'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     },
-    text: "Best cleaning service I've ever used! They transformed my home and paid attention to every detail. Highly recommend for anyone looking for quality.",
+    text: "Guille's team is amazing! They transformed my home and now I have my weekends back. The attention to detail is incredible. Worth every penny!",
   },
   {
     author: {
-      name: 'Michael Chen',
-      handle: '@mchen_biz',
+      name: 'Michael R.',
+      handle: 'Monroe, NY',
       avatar:
         'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     },
-    text: 'Our office has never looked better. The team is professional, punctual, and thorough. They work around our schedule perfectly.',
+    text: "Best cleaning service I've ever used. Professional, thorough, and always on time. They make our office shine every week. Highly recommend!",
   },
   {
     author: {
-      name: 'Emily Rodriguez',
-      handle: '@emilyrod',
+      name: 'Jennifer L.',
+      handle: 'Chester, NY',
       avatar:
         'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     },
-    text: 'Moving out was stress-free thanks to their move-out cleaning service. The landlord was impressed and I got my full deposit back!',
+    text: "They got my full deposit back after move-out! Their end of tenancy clean was incredibly thorough. The landlord said it was the cleanest he'd ever seen it.",
   },
   {
     author: {
-      name: 'David Thompson',
-      handle: '@dthompson',
+      name: 'David T.',
+      handle: 'Middletown, NY',
       avatar:
         'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     },
-    text: 'Eco-friendly products and exceptional service. They care about the environment and deliver outstanding results. My family feels safe.',
+    text: 'Eco-friendly products that actually work! My kids have allergies and these green products are perfect. Plus the results are outstanding.',
   },
   {
     author: {
-      name: 'Lisa Martinez',
-      handle: '@lisamartinez',
+      name: 'Lisa K.',
+      handle: 'Warwick, NY',
       avatar:
         'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     },
-    text: 'The deep cleaning service exceeded my expectations. Every corner sparkles! Worth every penny and saved me so much time.',
+    text: "The deep cleaning after our party was a lifesaver! Called them in the morning, they came same day. House looked brand new. Can't thank them enough!",
   },
   {
     author: {
-      name: 'James Wilson',
-      handle: '@jwilson_clean',
+      name: 'James W.',
+      handle: 'Goshen, NY',
       avatar:
         'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     },
-    text: 'Reliable and trustworthy. They have been cleaning our home for over a year now. Consistent quality every single time.',
+    text: "We've been using Guille's Cleaning for over a year. Consistent quality every single time. Trustworthy, reliable, and they treat our home like their own.",
+  },
+  {
+    author: {
+      name: 'Amanda S.',
+      handle: 'Monroe, NY',
+      avatar:
+        'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: 'My carpets look brand new after their steam cleaning! Got rid of pet stains I thought were permanent. Absolutely worth it!',
+  },
+  {
+    author: {
+      name: 'Robert M.',
+      handle: 'Chester, NY',
+      avatar:
+        'https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    },
+    text: 'Called for a quote on Friday, they came Saturday morning. Fast, efficient, and my place has never been cleaner. 5 stars all the way!',
   },
 ];
 
 export function Testimonials() {
   return (
     <TestimonialsSection
-      title="What Our Customers Say"
-      description="Join hundreds of satisfied customers who trust us with their spaces"
+      title="Real Reviews from Real Customers"
+      description="Join hundreds of happy families in Goshen and surrounding areas who trust Guille's Cleaning"
       testimonials={testimonials}
     />
   );
