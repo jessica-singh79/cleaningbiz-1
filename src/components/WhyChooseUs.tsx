@@ -1,4 +1,4 @@
-import { Shield, Clock, Award, Leaf, Star, CheckCircle } from 'lucide-react';
+import { Clock, Award, CheckCircle, Leaf } from 'lucide-react';
 
 const features = [
   {
@@ -27,27 +27,6 @@ const features = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "Sarah M.",
-    location: "Goshen, NY",
-    text: "Guille's team is amazing! They transformed my home and now I have my weekends back. Worth every penny!",
-    rating: 5
-  },
-  {
-    name: "Michael R.",
-    location: "Monroe, NY",
-    text: "Best cleaning service I've ever used. Professional, thorough, and always on time. Highly recommend!",
-    rating: 5
-  },
-  {
-    name: "Jennifer L.",
-    location: "Chester, NY",
-    text: "They got my full deposit back after move-out! Their end of tenancy clean was incredibly thorough.",
-    rating: 5
-  }
-];
-
 export function WhyChooseUs() {
   return (
     <section className="py-16 md:py-24 bg-white">
@@ -62,7 +41,7 @@ export function WhyChooseUs() {
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
@@ -84,29 +63,6 @@ export function WhyChooseUs() {
               </div>
             );
           })}
-        </div>
-
-        {/* Testimonials Section */}
-        <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 md:p-10">
-          <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8 text-center">
-            What Our Customers Say
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
-                <div className="flex gap-1 mb-3">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-slate-700 mb-4 italic leading-relaxed">
-                  "{testimonial.text}"
-                </p>
-                <div className="font-semibold text-slate-900">{testimonial.name}</div>
-                <div className="text-sm text-slate-500">{testimonial.location}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
