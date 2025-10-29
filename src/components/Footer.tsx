@@ -1,4 +1,4 @@
-import { Sparkles, Mail, Phone, MapPin } from 'lucide-react';
+import { Sparkles, Phone, MapPin } from 'lucide-react';
 
 export function Footer() {
   return (
