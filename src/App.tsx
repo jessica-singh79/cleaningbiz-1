@@ -1,24 +1,21 @@
 import './App.css';
 import { Hero } from './components/Hero';
-import { OurServices } from './components/OurServices'; // NEW - replaces "How It Works"
 import { ServiceCards } from './components/ServiceCards';
-import { AboutUs } from './components/AboutUs'; // NEW
+import { Services } from './components/Services';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { Testimonials } from './components/Testimonials';
 import { CTA } from './components/CTA';
-import { ContactForm } from './components/ContactForm'; // NEW
 import { Footer } from './components/Footer';
 
 function App() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Hero />
-      <OurServices /> {/* Simplified - just Home & Office */}
-      <AboutUs /> {/* NEW - Your business info */}
+      <Services />
+      <ServiceCards />
       <WhyChooseUs />
       <Testimonials />
       <CTA />
-      <ContactForm /> {/* NEW - Contact form */}
       <Footer />
     </div>
   );
