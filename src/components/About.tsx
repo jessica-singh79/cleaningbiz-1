@@ -6,35 +6,38 @@ export function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            About <span className="text-blue-600">Our Company</span>
+            About <span className="text-blue-600">Guille's Cleaning</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            With over 15 years of experience, we're your trusted partner for creating clean, healthy, and comfortable spaces in Goshen and surrounding areas.
+            Your trusted cleaning partner in Goshen for over 15 years. We take the hassle out of cleaning so you can focus on what matters most.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img
-              src="https://images.pexels.com/photos/6197118/pexels-photo-6197118.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Professional cleaning team"
+              src="https://github.com/jessica-singh79/cleaningbiz-1/raw/main/WhatsApp%20Image%202025-10-29%20at%2021.08.18.jpeg"
+              alt="Guille's Cleaning team"
               className="rounded-2xl shadow-xl w-full h-[500px] object-cover"
             />
           </div>
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-slate-900">
-              Your Home Deserves the Best Care
+              Exceptional Results, Every Single Time
             </h3>
             <p className="text-lg text-slate-700 leading-relaxed">
-              We understand that your home is your sanctuary. That's why we've dedicated ourselves to providing exceptional cleaning services that go beyond just surface-level cleaning. Our team of trained professionals treats every home with the care and attention it deserves.
+              At Guille's Cleaning, we take the hassle out of cleaning. No matter the size of your home or office, our trained cleaners work to the highest standard and will leave it sparkling clean.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed">
-              Founded in 2009, we've built our reputation on reliability, quality, and customer satisfaction. From routine maintenance to deep cleaning projects, we bring the same level of excellence to every job.
+              Our professional staff can handle any cleaning task—not only are we talented, we also have an unparalleled wealth of diverse industry experience. This means we never cut corners, and our commitment to customer happiness means we always deliver the highest-quality cleaning services at the best possible price.
+            </p>
+            <p className="text-lg font-semibold text-slate-900">
+              There's a reason our clients keep coming back—we deliver exceptional results, every single time.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <div className="flex items-center gap-2 text-blue-600 font-semibold">
                 <Award className="w-5 h-5" />
-                <span>Award-Winning Service</span>
+                <span>15+ Years Experience</span>
               </div>
               <div className="flex items-center gap-2 text-blue-600 font-semibold">
                 <Shield className="w-5 h-5" />
@@ -49,9 +52,9 @@ export function About() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-4">
               <Users className="w-8 h-8 text-white" />
             </div>
-            <h4 className="text-xl font-bold text-slate-900 mb-2">Expert Team</h4>
+            <h4 className="text-xl font-bold text-slate-900 mb-2">Trained Professionals</h4>
             <p className="text-slate-600">
-              Highly trained and background-checked professionals dedicated to your satisfaction
+              Background-checked cleaners who work to the highest standards every time
             </p>
           </div>
 
@@ -59,9 +62,9 @@ export function About() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-4">
               <Heart className="w-8 h-8 text-white" />
             </div>
-            <h4 className="text-xl font-bold text-slate-900 mb-2">Care & Quality</h4>
+            <h4 className="text-xl font-bold text-slate-900 mb-2">Customer First</h4>
             <p className="text-slate-600">
-              We treat your home like our own, with meticulous attention to every detail
+              Your satisfaction is our priority—we don't cut corners, ever
             </p>
           </div>
 
@@ -69,9 +72,9 @@ export function About() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-4">
               <Shield className="w-8 h-8 text-white" />
             </div>
-            <h4 className="text-xl font-bold text-slate-900 mb-2">Trust & Safety</h4>
+            <h4 className="text-xl font-bold text-slate-900 mb-2">Diverse Experience</h4>
             <p className="text-slate-600">
-              Fully insured and bonded for your complete peace of mind
+              Unparalleled expertise across residential and commercial cleaning
             </p>
           </div>
 
@@ -79,9 +82,9 @@ export function About() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-4">
               <Award className="w-8 h-8 text-white" />
             </div>
-            <h4 className="text-xl font-bold text-slate-900 mb-2">Proven Results</h4>
+            <h4 className="text-xl font-bold text-slate-900 mb-2">Best Value</h4>
             <p className="text-slate-600">
-              100% satisfaction guarantee backed by thousands of 5-star reviews
+              Highest-quality service at the best possible price—guaranteed
             </p>
           </div>
         </div>
