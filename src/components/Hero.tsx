@@ -56,7 +56,7 @@ export function Hero() {
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 text-center mt-16 md:mt-0">
-        {/* Serving Badge - HIDDEN ON MOBILE, VISIBLE ON DESKTOP */}
+        {/* Serving Badge - Hidden on Mobile, Visible on Desktop */}
         <div className="hidden md:inline-flex items-center gap-2 bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6 shadow-lg">
           <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
           <span>Proudly Serving Goshen & Surrounding Areas</span>
@@ -122,18 +122,6 @@ export function Hero() {
               <div className="text-xl font-bold text-blue-400 animate-typewriter-3">15+ Years Trusted</div>
             </div>
           </div>
-        </div>nded-lg px-4 py-3 opacity-0 animate-show-delay-2">
-            <span className="text-2xl font-bold text-blue-400">•</span>
-            <div className="text-left overflow-hidden">
-              <div className="text-xl font-bold text-blue-400 animate-typewriter-3">15+ Years Trusted</div>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 opacity-0 animate-show-delay-3">
-            <span className="text-2xl font-bold text-blue-400">•</span>
-            <div className="text-left overflow-hidden">
-              <div className="text-xl font-bold text-blue-400 animate-typewriter-4">100% Satisfaction</div>
-            </div>
-          </div>
         </div>
         
         {/* CTA Buttons - HIDDEN ON MOBILE, VISIBLE ON DESKTOP */}
@@ -180,4 +168,3 @@ export function Hero() {
       </div>
     </section>
   );
-}
