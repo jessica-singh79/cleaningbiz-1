@@ -18,15 +18,10 @@ export function Hero() {
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/60" />
       
-      {/* Company Logo & Name - Top Left */}
+      {/* Company Name - Top Left */}
       <div className="absolute top-6 left-6 z-20">
-        <div className="flex items-center gap-3 text-white">
-          <img
-            src="/nano-banana-2025-10-30T00-26-32.png"
-            alt="Guille's Cleaning Logo"
-            className="w-10 h-10 md:w-12 md:h-12 object-contain"
-            style={{ mixBlendMode: 'normal' }}
-          />
+        <div className="flex items-center gap-2 text-white">
+          <Sparkles className="w-6 h-6 text-blue-400" />
           <span className="text-xl md:text-2xl font-bold">Guille's Cleaning</span>
         </div>
       </div>

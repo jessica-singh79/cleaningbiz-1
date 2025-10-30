@@ -5,6 +5,7 @@ import {
   Building2,
   Sparkles,
   Wind,
+  Phone,
 } from 'lucide-react';
 
 const servicesList = [

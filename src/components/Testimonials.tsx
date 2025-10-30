@@ -77,12 +77,10 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials">
-      <TestimonialsSection
-        title="Real Reviews from Real Customers"
-        description="Join hundreds of happy families in Goshen and surrounding areas who trust Guille's Cleaning"
-        testimonials={testimonials}
-      />
-    </section>
+    <TestimonialsSection
+      title="Real Reviews from Real Customers"
+      description="Join hundreds of happy families in Goshen and surrounding areas who trust Guille's Cleaning"
+      testimonials={testimonials}
+    />
   );
 }
