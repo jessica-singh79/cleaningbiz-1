@@ -49,7 +49,8 @@ export function NavBar({ items, className }: NavBarProps) {
     const element = document.getElementById(id)
 
     if (element) {
-      const offset = 80
+      const isMobile = window.innerWidth < 640
+      const offset = isMobile ? 0 : 80
       const elementPosition = element.getBoundingClientRect().top
       const offsetPosition = elementPosition + window.pageYOffset - offset
 
@@ -63,11 +64,11 @@ export function NavBar({ items, className }: NavBarProps) {
   return (
     <div
       className={cn(
-        "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-50 mb-6 sm:pt-6",
+        "fixed bottom-4 sm:top-0 left-1/2 -translate-x-1/2 z-50 sm:pt-6 w-auto max-w-[95vw] sm:max-w-none",
         className,
       )}
     >
-      <div className="flex items-center gap-3 bg-background/5 border border-border backdrop-blur-lg py-1 px-1 rounded-full shadow-lg">
+      <div className="flex items-center gap-1 sm:gap-3 bg-background/5 border border-border backdrop-blur-lg py-1.5 px-2 sm:px-1 rounded-full shadow-lg">
         {items.map((item) => {
           const Icon = item.icon
           const isActive = activeTab === item.name
@@ -78,14 +79,14 @@ export function NavBar({ items, className }: NavBarProps) {
               href={item.url}
               onClick={(e) => handleClick(e, item)}
               className={cn(
-                "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
+                "relative cursor-pointer text-xs sm:text-sm font-semibold px-3 py-2.5 sm:px-6 sm:py-2 rounded-full transition-colors min-h-[44px] flex items-center justify-center",
                 "text-foreground/80 hover:text-primary",
                 isActive && "bg-muted text-primary",
               )}
             >
               <span className="hidden md:inline">{item.name}</span>
               <span className="md:hidden">
-                <Icon size={18} strokeWidth={2.5} />
+                <Icon size={20} strokeWidth={2.5} />
               </span>
               {isActive && (
                 <motion.div

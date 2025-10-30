@@ -31,32 +31,32 @@ export function WhyChooseUs() {
   return (
     <section id="why-us" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-3 sm:mb-4">
             Why Goshen Families Trust Guille's Cleaning
           </h2>
-          <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto px-2">
             We're not just another cleaning service. We're your trusted partner in maintaining a healthy, happy home.
           </p>
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <div
                 key={index}
-                className="flex gap-6 p-6 rounded-xl hover:bg-slate-50 transition-all duration-300 group"
+                className="flex gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl hover:bg-slate-50 transition-all duration-300 group"
               >
-                <div className="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-300">
-                  <Icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                <div className="bg-blue-100 w-12 h-12 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-300">
+                  <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-1 sm:mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-slate-600 text-base md:text-lg leading-relaxed">
+                  <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed">
                     {feature.description}
                   </p>
                 </div>

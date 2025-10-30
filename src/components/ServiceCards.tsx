@@ -43,39 +43,39 @@ export function ServiceCards() {
             <Sparkles className="w-4 h-4" />
             Our Services
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-3 sm:mb-4">
             Professional Cleaning for Every Need
           </h2>
-          <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto px-2">
             From regular maintenance to specialized deep cleans—we do it all with precision and care.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto mb-12 sm:mb-16">
           {servicesList.map((service, index) => {
             const Icon = service.icon;
             return (
               <Card
                 key={index}
-                className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-500 cursor-pointer relative overflow-hidden"
+                className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-500 cursor-pointer relative overflow-hidden touch-manipulation"
               >
                 {service.popular && (
-                  <div className="absolute -top-2 -right-2 bg-blue-600 text-white px-4 py-1 rounded-bl-lg text-xs font-bold shadow-lg z-10">
+                  <div className="absolute top-2 right-2 sm:-top-2 sm:-right-2 bg-blue-600 text-white px-3 py-1 sm:px-4 rounded-lg sm:rounded-bl-lg text-xs font-bold shadow-lg z-10">
                     MOST POPULAR
                   </div>
                 )}
-                <CardContent className="p-8">
-                  <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors duration-300">
-                    <Icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                <CardContent className="p-6 sm:p-8">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-blue-600 transition-colors duration-300">
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600 group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
+                  <p className="text-sm sm:text-base text-slate-600 mb-4 sm:mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  <Button 
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold group-hover:scale-105 transition-transform"
+                  <Button
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold group-hover:scale-105 transition-transform min-h-[44px] text-sm sm:text-base touch-manipulation"
                     onClick={() => {
                       const element = document.getElementById('contact');
                       if (element) {
@@ -91,17 +91,17 @@ export function ServiceCards() {
           })}
         </div>
 
-        <div className="text-center bg-blue-600 rounded-2xl p-10 text-white shadow-2xl">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+        <div className="text-center bg-blue-600 rounded-2xl p-6 sm:p-8 md:p-10 text-white shadow-2xl">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
             Need Carpet Cleaning or Window Cleaning?
           </h3>
-          <p className="text-lg md:text-xl mb-6 text-blue-100">
+          <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100">
             We also offer carpet cleaning, window cleaning, end of tenancy, and after-party cleanup services!
           </p>
-          <Button 
+          <Button
             size="lg"
             variant="outline"
-            className="border-2 border-white bg-white text-blue-600 hover:bg-blue-50 px-10 py-6 text-lg font-semibold hover:scale-105 transition-transform"
+            className="w-full sm:w-auto border-2 border-white bg-white text-blue-600 hover:bg-blue-50 px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold hover:scale-105 transition-transform min-h-[48px] touch-manipulation"
             onClick={() => {
               const element = document.getElementById('contact');
               if (element) {
