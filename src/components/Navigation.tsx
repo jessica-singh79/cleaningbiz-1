@@ -9,7 +9,6 @@ const navItems = [
   { name: 'Testimonials', url: '#testimonials', icon: Star },
   { name: 'Contact', url: '#contact', icon: Mail },
 ];
-
 export function Navigation() {
-  return <NavBar items={navItems} className="bg-black/30 backdrop-blur-sm border-white/20" />;
+  return <NavBar items={navItems} className="bg-transparent border-white/20" />;
 }
