@@ -50,12 +50,12 @@ export function Hero() {
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/90 to-transparent md:hidden" />
       
       {/* Company Name - Centered at Top */}
-      <div className="absolute top-6 left-0 right-0 z-20 text-center md:top-6 md:left-6 md:text-left md:right-auto">
+      <div className="absolute top-4 left-0 right-0 z-20 text-center md:top-6 md:left-6 md:text-left md:right-auto">
         <span className="text-2xl sm:text-3xl md:text-2xl font-bold text-white drop-shadow-lg">Guille's Cleaning</span>
       </div>
       
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 text-center mt-16 md:mt-0">
         {/* Serving Badge - HIDDEN ON MOBILE, VISIBLE ON DESKTOP */}
         <div className="hidden md:inline-flex items-center gap-2 bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6 shadow-lg">
           <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -117,6 +117,12 @@ export function Hero() {
             </div>
           </div>
           <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 opacity-0 animate-show-delay-2">
+            <span className="text-2xl font-bold text-blue-400">•</span>
+            <div className="text-left overflow-hidden">
+              <div className="text-xl font-bold text-blue-400 animate-typewriter-3">15+ Years Trusted</div>
+            </div>
+          </div>
+        </div>nded-lg px-4 py-3 opacity-0 animate-show-delay-2">
             <span className="text-2xl font-bold text-blue-400">•</span>
             <div className="text-left overflow-hidden">
               <div className="text-xl font-bold text-blue-400 animate-typewriter-3">15+ Years Trusted</div>
