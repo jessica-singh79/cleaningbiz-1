@@ -2,6 +2,13 @@ import { Button } from '@/components/ui/button';
 import { Sparkles, Phone, CheckCircle, Star, Shield } from 'lucide-react';
 
 export function Hero() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-20 sm:pb-0">
       {/* Background Video */}
@@ -61,6 +68,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10 px-4">
           <Button
             size="lg"
+            onClick={scrollToContact}
             className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 sm:px-10 py-6 sm:py-7 text-base sm:text-lg font-semibold shadow-2xl hover:scale-105 transition-transform min-h-[48px]"
           >
             Get Your Free Quote Now
