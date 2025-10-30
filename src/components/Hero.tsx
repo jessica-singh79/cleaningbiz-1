@@ -53,10 +53,10 @@ export function Hero() {
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 text-center">
-        <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6 shadow-lg">
+        {/* Serving Badge - HIDDEN ON MOBILE, VISIBLE ON DESKTOP */}
+        <div className="hidden md:inline-flex items-center gap-2 bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6 shadow-lg">
           <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
-          <span className="hidden xs:inline">Proudly Serving Goshen & Surrounding Areas</span>
-          <span className="xs:hidden">Serving Goshen Area</span>
+          <span>Proudly Serving Goshen & Surrounding Areas</span>
         </div>
         
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
@@ -86,8 +86,8 @@ export function Hero() {
           </div>
         </div>
         
-        {/* CTA Buttons - Hidden on Desktop (md and up), Visible on Mobile */}
-        <div className="flex md:hidden flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10 px-4">
+        {/* CTA Buttons - HIDDEN ON MOBILE, VISIBLE ON DESKTOP */}
+        <div className="hidden md:flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10 px-4">
           <Button
             size="lg"
             type="button"
@@ -104,13 +104,12 @@ export function Hero() {
             onClick={() => window.location.href = 'tel:+18457758080'}
           >
             <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-            <span className="hidden xs:inline">Call (845) 775-8080</span>
-            <span className="xs:hidden">(845) 775-8080</span>
+            <span>Call (845) 775-8080</span>
           </Button>
         </div>
         
-        {/* Stats */}
-        <div className="mt-10 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 max-w-5xl mx-auto px-2">
+        {/* Stats - HIDDEN ON MOBILE, VISIBLE ON DESKTOP */}
+        <div className="hidden md:grid mt-10 sm:mt-16 grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 max-w-5xl mx-auto px-2">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-all">
             <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-400 mb-1 sm:mb-2">500+</div>
             <div className="text-slate-200 font-medium text-xs sm:text-sm md:text-base">Happy Families</div>
