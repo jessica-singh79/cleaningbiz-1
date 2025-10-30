@@ -3,7 +3,7 @@ import { Sparkles, Phone, CheckCircle, Star, Shield } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
       <video 
         autoPlay 
@@ -17,6 +17,14 @@ export function Hero() {
       
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/60" />
+      
+      {/* Company Name - Top Left */}
+      <div className="absolute top-6 left-6 z-20">
+        <div className="flex items-center gap-2 text-white">
+          <Sparkles className="w-6 h-6 text-blue-400" />
+          <span className="text-xl md:text-2xl font-bold">Guille's Cleaning</span>
+        </div>
+      </div>
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
@@ -52,7 +60,7 @@ export function Hero() {
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
           <Button 
             size="lg" 
             className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-7 text-lg font-semibold shadow-2xl hover:scale-105 transition-transform"
@@ -69,10 +77,6 @@ export function Hero() {
             Call (845) 775-8080
           </Button>
         </div>
-
-        <p className="text-sm text-slate-300 mb-16">
-          📞 Call now for <span className="font-bold text-white">same-day service</span> • Free quotes in under 60 seconds
-        </p>
         
         {/* Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
