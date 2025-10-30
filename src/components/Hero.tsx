@@ -86,7 +86,8 @@ export function Hero() {
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10 px-4">
+        {/* CTA Buttons - Hidden on Desktop (md and up), Visible on Mobile */}
+        <div className="flex md:hidden flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10 px-4">
           <Button
             size="lg"
             type="button"
