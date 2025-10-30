@@ -29,11 +29,13 @@ const services = [
 
 export function Services() {
   return (
-    <FeatureSteps
-      features={services}
-      title="How It Works"
-      autoPlayInterval={4000}
-      className="bg-slate-50"
-    />
+    <section id="services">
+      <FeatureSteps
+        features={services}
+        title="How It Works"
+        autoPlayInterval={4000}
+        className="bg-slate-50"
+      />
+    </section>
   );
 }
