@@ -2,10 +2,18 @@ import { Button } from '@/components/ui/button';
 import { Sparkles, Phone, CheckCircle, Star, Shield } from 'lucide-react';
 
 export function Hero() {
-  const scrollToContact = () => {
+  const scrollToContact = (e: React.MouseEvent) => {
+    e.preventDefault();
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Add small delay to ensure smooth scroll on all browsers
+      setTimeout(() => {
+        contactSection.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start',
+          inline: 'nearest'
+        });
+      }, 100);
     }
   };
 
