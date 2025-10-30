@@ -75,7 +75,15 @@ export function ServiceCards() {
                   <p className="text-slate-600 mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold group-hover:scale-105 transition-transform">
+                  <Button 
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold group-hover:scale-105 transition-transform"
+                    onClick={() => {
+                      const element = document.getElementById('contact');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
                     Book This Service
                   </Button>
                 </CardContent>
@@ -95,10 +103,14 @@ export function ServiceCards() {
             size="lg"
             variant="outline"
             className="border-2 border-white bg-white text-blue-600 hover:bg-blue-50 px-10 py-6 text-lg font-semibold hover:scale-105 transition-transform"
-            onClick={() => window.location.href = 'tel:+18457758080'}
+            onClick={() => {
+              const element = document.getElementById('contact');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
-            <Phone className="w-5 h-5 mr-2" />
-            Call (845) 775-8080 Now
+            Request a Quote
           </Button>
         </div>
       </div>
