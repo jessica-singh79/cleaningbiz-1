@@ -13,7 +13,7 @@ const servicesList = [
   {
     icon: Home,
     title: 'Regular Home Cleaning',
-    description: 'Keep your home spotless with our weekly or bi-weekly cleaning services. We handle everything so you don't have to.',
+    description: 'Keep your home spotless with our weekly or bi-weekly cleaning services. We handle everything so you do not have to.',
     features: ['All rooms deep cleaned', 'Kitchen & bathrooms sanitized', 'Dusting & vacuuming', 'Flexible scheduling'],
     popular: true
   },
@@ -97,7 +97,6 @@ export function ServiceCards() {
           })}
         </div>
 
-        {/* CTA Box */}
         <div className="text-center bg-blue-600 rounded-2xl p-10 text-white shadow-2xl">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Need Carpet Cleaning or Window Cleaning?
