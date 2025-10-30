@@ -46,9 +46,12 @@ export function Hero() {
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/60" />
       
-      {/* Company Name - Top Left */}
-      <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-20">
-        <span className="text-lg sm:text-xl md:text-2xl font-bold text-white drop-shadow-lg">Guille's Cleaning</span>
+      {/* Extra gradient at bottom to hide watermark on mobile */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/90 to-transparent md:hidden" />
+      
+      {/* Company Name - Centered at Top */}
+      <div className="absolute top-6 left-0 right-0 z-20 text-center md:top-6 md:left-6 md:text-left md:right-auto">
+        <span className="text-2xl sm:text-3xl md:text-2xl font-bold text-white drop-shadow-lg">Guille's Cleaning</span>
       </div>
       
       {/* Content */}
@@ -84,6 +87,19 @@ export function Hero() {
             <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
             <span className="text-xs sm:text-sm font-medium">Insured</span>
           </div>
+        </div>
+        
+        {/* Call Button - Mobile Only */}
+        <div className="md:hidden mb-8">
+          <Button
+            size="lg"
+            type="button"
+            className="w-full max-w-sm mx-auto bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-6 text-lg font-semibold shadow-xl hover:scale-105 transition-all min-h-[48px]"
+            onClick={() => window.location.href = 'tel:+18457758080'}
+          >
+            <Phone className="w-5 h-5 mr-2" />
+            Call (845) 775-8080
+          </Button>
         </div>
         
         {/* CTA Buttons - HIDDEN ON MOBILE, VISIBLE ON DESKTOP */}
