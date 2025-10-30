@@ -2,18 +2,31 @@ import { Button } from '@/components/ui/button';
 import { Sparkles, Phone, CheckCircle, Star, Shield } from 'lucide-react';
 
 export function Hero() {
-  const scrollToContact = (e: React.MouseEvent) => {
-    e.preventDefault();
+  const scrollToContact = () => {
+    console.log('🔵 Button clicked!');
+    
+    // Try multiple methods to ensure it works
     const contactSection = document.getElementById('contact');
+    console.log('🔍 Contact section:', contactSection);
+    
     if (contactSection) {
-      // Add small delay to ensure smooth scroll on all browsers
+      console.log('✅ Scrolling now...');
+      
+      // Method 1: scrollIntoView
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start'
+      });
+      
+      // Backup method in case smooth scroll doesn't work
       setTimeout(() => {
-        contactSection.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'start',
-          inline: 'nearest'
+        window.scrollTo({
+          top: contactSection.offsetTop - 100,
+          behavior: 'smooth'
         });
-      }, 100);
+      }, 50);
+    } else {
+      console.error('❌ Contact section not found!');
     }
   };
 
@@ -76,13 +89,15 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10 px-4">
           <Button
             size="lg"
+            type="button"
             onClick={scrollToContact}
-            className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 sm:px-10 py-6 sm:py-7 text-base sm:text-lg font-semibold shadow-2xl hover:scale-105 transition-transform min-h-[48px]"
+            className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 sm:px-10 py-6 sm:py-7 text-base sm:text-lg font-semibold shadow-2xl hover:scale-105 transition-transform min-h-[48px] cursor-pointer"
           >
             Get Your Free Quote Now
           </Button>
           <Button
             size="lg"
+            type="button"
             variant="outline"
             className="w-full sm:w-auto border-2 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-blue-600 px-8 sm:px-10 py-6 sm:py-7 text-base sm:text-lg font-semibold shadow-xl hover:scale-105 transition-all min-h-[48px]"
             onClick={() => window.location.href = 'tel:+18457758080'}
