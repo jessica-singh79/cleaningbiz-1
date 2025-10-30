@@ -31,7 +31,7 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-20 sm:pb-0">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24 md:pb-20">
       {/* Background Video */}
       <video
         autoPlay
@@ -55,7 +55,7 @@ export function Hero() {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 text-center">
         {/* Serving Badge - HIDDEN ON MOBILE, VISIBLE ON DESKTOP */}
         <div className="hidden md:inline-flex items-center gap-2 bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6 shadow-lg">
           <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
