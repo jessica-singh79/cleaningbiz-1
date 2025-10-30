@@ -11,5 +11,5 @@ const navItems = [
 ];
 
 export function Navigation() {
-  return <NavBar items={navItems} className="bg-white/90" />;
+  return <NavBar items={navItems} className="bg-black/30 backdrop-blur-sm border-white/20" />;
 }
