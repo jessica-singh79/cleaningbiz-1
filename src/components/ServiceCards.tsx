@@ -5,7 +5,6 @@ import {
   Building2,
   Sparkles,
   Wind,
-  CheckCircle,
   Phone,
 } from 'lucide-react';
 
@@ -14,28 +13,24 @@ const servicesList = [
     icon: Home,
     title: 'Regular Home Cleaning',
     description: 'Keep your home spotless with our weekly or bi-weekly cleaning services. We handle everything so you do not have to.',
-    features: ['All rooms deep cleaned', 'Kitchen & bathrooms sanitized', 'Dusting & vacuuming', 'Flexible scheduling'],
     popular: true
   },
   {
     icon: Building2,
     title: 'Office Cleaning',
     description: 'Keep your workspace productive and professional. Our commercial cleaners handle any task with expertise.',
-    features: ['Flexible scheduling', 'After-hours cleaning', 'Professional staff', 'Competitive pricing'],
     popular: false
   },
   {
     icon: Sparkles,
     title: 'Deep Cleaning',
     description: 'Need a thorough, top-to-bottom clean? Perfect for spring cleaning, special occasions, or catching up.',
-    features: ['Every corner cleaned', 'Behind appliances', 'Light fixtures', 'Baseboards & trim'],
     popular: false
   },
   {
     icon: Wind,
     title: 'Move In/Out Cleaning',
     description: 'Start fresh in your new home or leave your old one spotless. Perfect for buyers, sellers, and renters.',
-    features: ['Inside cabinets & drawers', 'Window cleaning', 'Baseboard detailing', 'Garage cleaning'],
     popular: false
   },
 ];
@@ -80,14 +75,6 @@ export function ServiceCards() {
                   <p className="text-slate-600 mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  <ul className="space-y-2 mb-6">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm">
-                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-slate-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold group-hover:scale-105 transition-transform">
                     Book This Service
                   </Button>
