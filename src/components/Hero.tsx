@@ -102,6 +102,34 @@ export function Hero() {
           </Button>
         </div>
         
+        {/* Stats Ticker - Mobile Only */}
+        <div className="md:hidden flex flex-col gap-3 px-4 max-w-sm mx-auto">
+          <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3">
+            <span className="text-2xl font-bold text-blue-400 animate-fade-in">•</span>
+            <div className="text-left overflow-hidden">
+              <div className="text-xl font-bold text-blue-400 animate-typewriter-1">500+ Happy Families</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 opacity-0 animate-show-delay-1">
+            <span className="text-2xl font-bold text-blue-400">•</span>
+            <div className="text-left overflow-hidden">
+              <div className="text-xl font-bold text-blue-400 animate-typewriter-2">10k+ Homes Transformed</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 opacity-0 animate-show-delay-2">
+            <span className="text-2xl font-bold text-blue-400">•</span>
+            <div className="text-left overflow-hidden">
+              <div className="text-xl font-bold text-blue-400 animate-typewriter-3">15+ Years Trusted</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 opacity-0 animate-show-delay-3">
+            <span className="text-2xl font-bold text-blue-400">•</span>
+            <div className="text-left overflow-hidden">
+              <div className="text-xl font-bold text-blue-400 animate-typewriter-4">100% Satisfaction</div>
+            </div>
+          </div>
+        </div>
+        
         {/* CTA Buttons - HIDDEN ON MOBILE, VISIBLE ON DESKTOP */}
         <div className="hidden md:flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10 px-4">
           <Button
