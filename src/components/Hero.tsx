@@ -31,7 +31,7 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24 md:pb-20">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24 md:pb-20">>
       {/* Background Video */}
       <video
         autoPlay
@@ -168,3 +168,4 @@ export function Hero() {
       </div>
     </section>
   );
+}
